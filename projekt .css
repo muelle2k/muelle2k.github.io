@@ -161,9 +161,19 @@ main {
 }
 
 .slide {
+
 	padding: 2em;
 	padding-bottom: 3em;
 	border-bottom: 2px solid white;
+}
+.slide a{
+	text-transform: uppercase;
+	color:white;
+	list-type-style: none;
+	text-decoration: none;
+}
+.slide a:hover{
+	color:grey;
 }
 
 /* Bilder----------------------------*/
@@ -178,6 +188,9 @@ main {
 	clear: left;
 	border: none;
 	padding-top: 4em 1em 1em 2em;
+}
+#extraabout p{
+	text-align: center;
 }
 
 /*footer---------------------------------------*/
