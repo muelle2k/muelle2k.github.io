@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+/*Body-----------------------------------------*/
+html {
+	background-color: black;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 200%;
+	z-index: 2;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 200%;
+	z-index: 2;
+}
+
+/* header nav --------------------------------*/
+#menu a {
+	text-transform: uppercase; /*große Buchstaben*/
+	list-type-style: none;
+	text-decoration: none;
+	color: #d8d6da;
+	display: block;
+	font-size: 1.2em;
+	padding: 10x;
+	margin: 1em;
+	float: left;
+	text-align: center;
+	display: block;
+	text-align: center;
+}
+
+#menu a:hover {
+	color: white;
+}
+
+#menu {
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+main {
+	position: relative;
+	top: 5em;
+	clear: left;
+}
+
+/*logo------------------------------------------*/
+.logo {
+	font-family: "Limelight", sans-serif;
+	display: block;
+	width: 0px;
+	height: 0px;
+	-webkit-transform: rotate(360deg);
+	border-style: solid;
+	border-width: 200px 150px 0 150px;
+	border-color: white transparent transparent transparent;
+	position: relative;
+	top: 20em;
+	left: 8%;
+	color: black;
+}
+
+.logo:hover {
+	display: block;
+	width: 0px;
+	height: 0px;
+	-webkit-transform: rotate(360deg);
+	border-style: solid;
+	border-width: 200px 150px 0 150px;
+	border-color: black transparent transparent transparent;
+	color: white;
+}
+
+.logo2 {
+	font-family: "Limelight", sans-serif;
+	display: block;
+	width: 0px;
+	height: 0px;
+	-webkit-transform: rotate(360deg);
+	border-style: solid;
+	border-width: 100px 75px 0 75px;
+	border-color: white transparent transparent transparent;
+	position: relative;
+	left: 25%;
+	color: black;
+}
+
+.logo2:hover {
+	display: block;
+	width: 0px;
+	height: 0px;
+	-webkit-transform: rotate(360deg);
+	border-style: solid;
+	border-width: 100px 75px 0 75px;
+	border-color: black transparent transparent transparent;
+	color: white;
+}
+
+.logo h1 {
+	text-transform: uppercase;
+	position: absolute;
+	top: -4.45em;
+	left: -2.35em;
+	font-size: 3em;
+}
+
+.logo2 h1 {
+	text-transform: uppercase;
+	position: absolute;
+	top: -4.8em;
+	left: -2.35em;
+	font-size: 1.5em;
+}
+
+.logo h2 {
+	text-transform: uppercase;
+	position: absolute;
+	top: -3.25em;
+	left: -0.8em;
+	font-size: 3em;
+}
+
+.logo2 h2 {
+	text-transform: uppercase;
+	position: absolute;
+	top: -3.5em;
+	left: -0.8em;
+	font-size: 1.5em;
+}
+
+/*sections / slides------------------------*/
+.section1 * h1 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 2em;
+}
+
+.section1 * p {
+	text-align: center;
+}
+
+.section1 {
+	position: relative;
+	top: 30em;
+}
+
+.slide {
+	padding: 2em;
+	padding-bottom: 3em;
+	border-bottom: 2px solid white;
+}
+
+/* Bilder----------------------------*/
+.filter {
+	width: 98%;
+	margin: 1%;
+}
+
+/* About-Teil-------------------------*/
+#about {
+	margin: 40em 0em 40em 0em;
+	clear: left;
+	border: none;
+	padding-top: 4em 1em 1em 2em;
+}
+
+/*footer---------------------------------------*/
+#footer {
+	background-color: white;
+}
+
+footer ul li a {
+	list-type-style: none;
+	text-decoration: none;
+	color: black;
+	float: left;
+	text-align: center;
+}
+
+@media screen and (min-width:24em) {
+	.logo {
+		position: relative;
+		top: 20em;
+		left: 30%;
+	}
+	.logo2 {
+		position: relative;
+		left: 40%;
+	}
+	.section1 {
+		position: relative;
+		top: 45em;
+	}
+	#about {
+		position: relative;
+		top: 10em;
+	}
+}
+
+@media screen and (min-width:48em) {
+	.logo {
+		position: relative;
+		top: 20em;
+		left: 35%;
+	}
+	.logo2 {
+		position: relative;
+		left: 41%;
+	}
+}
+
+@media screen and (min-width:64em) {
+	.logo {
+		position: relative;
+		top: 20em;
+		left: 40%;
+	}
+	.logo2 {
+		position: relative;
+		left: 45%;
+	}
+}
+
+@media screen and (min-width:100em) {
+	.logo {
+		position: relative;
+		top: 20em;
+		left: 41%;
+	}
+	.logo2 {
+		position: relative;
+		left: 45%;
+	}
+}
