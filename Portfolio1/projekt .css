@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+/*Body-----------------------------------------*/
+html {
+	background-color: white;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 200%;
+	z-index: 2;
+}
+
+body {
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 200%;
+	z-index: 2;
+}
+
+/* header nav --------------------------------*/
+#menu a {
+	text-transform: uppercase; /*große Buchstaben*/
+	list-type-style: none;
+	text-decoration: none;
+	color: #969498;
+	display: block;
+	font-size: 1.1em;
+	padding: 10x;
+	margin: 1em;
+	float: left;
+	text-align: center;
+	display: block;
+}
+
+#menu a:hover {
+	color: black;
+}
+
+#menu {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+
+main {
+	
+	clear: left;
+}
+
+/*logo------------------------------------------
+.logo {
+	margin-top: 6em;
+	margin-bottom: 10em;
+	position: relative;
+	top: 20em;
+	margin-bottom: 10em;
+}
+
+.logo h1 {
+	font-family: "Limelight", sans-serif;
+	text-transform: uppercase;
+	margin: auto;
+	margin-top: -5em;
+	margin-left: 8%;
+	color: black;
+	font-size: 2em;
+}
+
+.logo h2 {
+	padding-top: 0.25em;
+	font-family: "Limelight", sans-serif;
+	text-transform: uppercase;
+	margin: auto;
+	margin-left: 28%;
+	color: black;
+	font-size: 2em;
+}
+*/
+
+/*sections / slides------------------------*/
+.section1 * h1 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 2em;
+}
+
+.section1 * p {
+	text-align: center;
+}
+
+.section1 {
+	
+}
+
+.slide {
+	padding: 2em;
+	padding-bottom: 3em;
+	border-bottom: 2px solid black;
+}
+
+.link {
+	padding-left: 2%;
+}
+/* Bilder----------------------------*/
+.filter {
+	width: 98%;
+	margin: 1%;
+}
+
+.filter2 {
+	width: 98%;
+	margin: 1%;
+}
+
+.filterText {
+	width: 80%;
+	margin: 10%;
+	font-size: 1.4em;
+	margin-bottom: 20em;
+}
+
+/* About-Teil-------------------------*/
+#about {
+	margin: 40em 0em 40em 0em;
+	clear: left;
+	border: none;
+	padding-top: 4em 1em 1em 2em;
+}
+
+/*footer---------------------------------------*/
+footer {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+	color: white;
+	font-size: 1em;
+	clear: left;
+	position: relative;
+	top: 49em;
+	background-color: white;
+	width: 100%;
+	float: left;
+	overflow: auto;
+	z-index: 3;
+}
+
+.HFU {
+	width: 15%;
+	float: right;
+}
+
+@media screen and (min-width:24em) {
+	/*.logo {
+		position: relative;
+		top: 20em;
+		font-size: 1.25em;
+		margin-left: 7.5%;
+	}
+	.logo h1 {
+		margin-top: -5em;
+		margin-left: -4%;
+	}
+	.logo h2 {
+		margin: auto;
+		margin-left: 20%;
+		font-size: 2em;
+	}*/
+	.section1 {
+		position: relative;
+		top: 5em;
+	}
+	#about {
+		position: relative;
+		top: 10em;
+	}
+}
+
+@media screen and (min-width:36em) {
+	/*.logo {
+		position: relative;
+		top: 18em;
+		margin-left: 10%;
+		font-size: 1.5em;
+	}
+	.logo h1 {
+		margin-top: -5em;
+		margin-left: 17.5%;
+	}
+	.logo h2 {
+		margin: auto;
+		margin-left: 30%;
+		padding-top: 0.5em;
+	}*/
+	.section1 {
+		position: relative;
+		top: 5em;
+	}
+	#about {
+		position: relative;
+		top: 10em;
+	}
+}
+
+@media screen and (min-width:48em) {
+	/*.logo {
+		position: relative;
+		top: 18em;
+		margin-left: 12.5%;
+		font-size: 1.5em;
+	}
+	.logo h1 {
+		margin-top: -5em;
+		margin-left: 17.5%;
+	}
+	.logo h2 {
+		margin: auto;
+		margin-left: 30%;
+	}*/
+	
+	.filter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 88%;
+	}
+	.filter2 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 45%;
+	}
+	.link {
+		padding-left: 8%;
+		font-size: 0.85em;
+	}
+	.slide {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (min-width:64em) {
+	/*.logo {
+		position: relative;
+		top: 18em;
+		margin-left: 12.5%;
+		font-size: 1.5em;
+	}
+	.logo h1 {
+		margin-top: -5em;
+		margin-left: 22.5%;
+	}
+	.logo h2 {
+		margin: auto;
+		margin-left: 35%;
+	}*/
+	.filter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+	}
+	.filter2 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 35%;
+	}
+	.link {
+		padding-left: 16%;
+	}
+}
+
+@media screen and (min-width:100em) {
+	/*.logo {
+		position: relative;
+		top: 18em;
+		margin-left: 15%;
+		font-size: 1.5em;
+	}
+	.logo h1 {
+		margin-top: -5em;
+		margin-left: 25.5%;
+	}
+	.logo h2 {
+		margin: auto;
+		padding-top: 0.5em;
+		margin-left: 34.6%;
+	}*/
+	.filter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 65%;
+	}
+	.filter2 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 35%;
+	}
+	.link {
+		padding-left: 18%;
+	}
+}

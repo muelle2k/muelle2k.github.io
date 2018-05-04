@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+/*Body-----------------------------------------*/
+body {
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 150%;
+	z-index: 2;
+}
+
+/* header nav --------------------------------*/
+#menu a {
+	text-transform: uppercase; /*große Buchstaben*/
+	list-type-style: none;
+	text-decoration: none;
+	color: #969498;
+	display: block;
+	font-size: 1.1em;
+	padding: 10x;
+	margin: 1em;
+	float: left;
+	text-align: center;
+	display: block;
+}
+
+#menu a:hover {
+	color: black;
+}
+
+#menu {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+main {
+	position: relative;
+	top: 5em;
+	clear: left;
+}
+
+.foto {
+	width: 98%;
+	margin: 1%;
+}
+
+/* Sprachen Kenntnisse--------------------------------*/
+.box {
+	margin-top: 5px;
+	background-color: #b3d7ff;
+	border: 1px solid #A2AAB9;
+	width: 12em;
+	text-transform: uppercase;
+}
+
+.Deutsch {
+	width: 100%;
+	background-color: #475d8d;
+	color: white;
+}
+
+.Spanisch {
+	width: 100%;
+	background-color: #475d8d;
+	color: white;
+}
+
+.Englisch {
+	width: 80%;
+	background-color: #475d8d;
+	color: white;
+}
+
+.Franz {
+	width: 30%;
+	background-color: #475d8d;
+	color: white;
+}
+
+.HTML {
+	width: 80%;
+	background-color: #475d8d;
+	color: white;
+}
+
+.CSS {
+	width: 80%;
+	background-color: #475d8d;
+	color: white;
+}
+
+.Typescript {
+	width: 65%;
+	background-color: #475d8d;
+	color: white;
+}
+
+.Photoshop {
+	width: 70%;
+	background-color: #475d8d;
+	color: white;
+}
+
+.Blender {
+	width: 80%;
+	background-color: #475d8d;
+	color: white;
+}
+
+/* content---------------------------------------*/
+.Lebenslauf  h2 {
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
+.Bildung {
+	margin-left: 5%;
+	width: 75%;
+}
+
+.Schulbildung p {
+	font-weight: bold;
+}
+
+.Schulbildung h2 {
+	text-align: center;
+	padding-top: 2em;
+}
+
+#h2 {
+	text-algin: center;
+	padding-top: 4em;
+}
+
+.Kenntnisse {
+	margin-left: 5%;
+	width: 75%;
+}
+
+.Skills {
+	padding-bottom: 3em;
+	padding-top: 1em;
+}
+
+.Satz {
+	margin-left: 5%;
+	width: 75%;
+}
+
+/*footer---------------------------------------*/
+footer {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+	color: white;
+	font-size: 1em;
+	clear: left;
+	position: relative;
+	top: 15em;
+	background-color: white;
+	width: 100%;
+	float: left;
+	overflow: auto;
+	z-index: 3;
+}
+
+.HFU {
+	width: 15%;
+	float: right;
+}
+
+@media screen and (min-width:48em) {
+	.sprachen {
+		margin-left: 12.5%;
+		width: 75%;
+	}
+	.Skills {
+		margin-left: 12.5%;
+		width: 75%;
+	}
+	.Bildung {
+		margin-left: 12.5%;
+		width: 75%;
+	}
+	.Satz {
+		margin-left: 12.5%;
+		width: 75%;
+	}
+	.foto {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+	}
+}
+
+@media screen and (min-width:64em) {
+	.sprachen {
+		margin-left: 18%;
+		width: 65%;
+	}
+	.Skills {
+		margin-left: 18%;
+		width: 65%;
+	}
+	.Bildung {
+		margin-left: 18%;
+		width: 65%;
+	}
+	.Satz {
+		margin-left: 18%;
+		width: 65%;
+	}
+	.foto {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 65%;
+	}
+	.Satz {
+		font-size: 1.3em;
+	}
+	.Bildung {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (min-width:100em) {
+	.sprachen {
+		margin-left: 25%;
+		width: 65%;
+	}
+	.Skills {
+		margin-left: 25%;
+		width: 65%;
+	}
+	.Bildung {
+		margin-left: 25%;
+		width: 65%;
+	}
+	.Satz {
+		margin-left: 25%;
+		width: 52.5%;
+	}
+	.Kenntnisse {
+		margin-left: 6%;
+	}
+	.foto {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 55%;
+	}
+}

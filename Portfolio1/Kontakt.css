@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+/*Body-----------------------------------------*/
+html {
+	background-color: white;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 200%;
+	z-index: 2;
+}
+
+body {
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 200%;
+	z-index: 2;
+}
+
+/* header nav --------------------------------*/
+#menu a {
+	text-transform: uppercase; /*große Buchstaben*/
+	list-type-style: none;
+	text-decoration: none;
+	color: #969498;
+	display: block;
+	font-size: 1.1em;
+	padding: 10x;
+	margin: 1em;
+	float: left;
+	text-align: center;
+	display: block;
+}
+
+#menu a:hover {
+	color: black;
+}
+
+#menu {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+main {
+	position: relative;
+	top: 7.5em;
+	clear: left;
+}
+
+/* Text ---------------------------------------------*/
+main{
+	padding-left: 5%;
+	width:70%;
+	margin: auto;
+}
+.Adresse{
+	margin-bottom: 2em;
+	color:black;
+}
+
+footer {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+	color: white;
+	font-size: 1em;
+	clear: left;
+	position: relative;
+	top: 10em;
+	background-color: white;
+	width: 100%;
+	float: left;
+	overflow: auto;
+	z-index: 3;
+
+}
+
+.HFU {
+	width: 10%;
+	float: right;
+}
+
+.HeadImpressum{
+	font-weight: bold;
+	font-size: 1.6em;
+	padding-top:1.5em;
+}

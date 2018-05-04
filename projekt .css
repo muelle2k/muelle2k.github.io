@@ -60,6 +60,11 @@ main {
 }
 
 /*logo------------------------------------------*/
+#home {
+	position: relative;
+	left: -5em;
+}
+
 .logo {
 	font-family: "Limelight", sans-serif;
 	display: block;
@@ -161,19 +166,20 @@ main {
 }
 
 .slide {
-
 	padding: 2em;
 	padding-bottom: 3em;
 	border-bottom: 2px solid white;
 }
-.slide a{
+
+.slide a {
 	text-transform: uppercase;
-	color:white;
+	color: white;
 	list-type-style: none;
 	text-decoration: none;
 }
-.slide a:hover{
-	color:grey;
+
+.slide a:hover {
+	color: grey;
 }
 
 /* Bilder----------------------------*/
@@ -189,11 +195,13 @@ main {
 	border: none;
 	padding-top: 4em 1em 1em 2em;
 }
-#extraabout p{
+
+#extraabout p {
 	text-align: center;
 }
 
-#box{
+#box p {
+	text-align: center;
 }
 /*footer---------------------------------------*/
 #footer {
@@ -261,5 +269,8 @@ footer ul li a {
 	.logo2 {
 		position: relative;
 		left: 45%;
+	}
+	body {
+		background-color: red;
 	}
 }
