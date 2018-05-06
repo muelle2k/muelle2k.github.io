@@ -144,13 +144,12 @@ footer {
 	font-size: 1em;
 	clear: left;
 	position: relative;
-	top: -1em;
+	top: -0.25em;
 	background-color: white;
 	width: 100%;
 	float: left;
 	overflow: auto;
 	z-index: 3;
-	background-color: white;
 }
 
 .HFU {
