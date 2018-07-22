@@ -5,7 +5,7 @@ var Aufgabe11;
             super(_x, _y, _color);
         }
         moveDown() {
-            if (this.y > 1500) {
+            if (this.y > Aufgabe11.crc2.canvas.height) {
                 this.y += 10;
             }
         }
@@ -16,9 +16,9 @@ var Aufgabe11;
         }
         move() {
             this.x += +30;
-            if (this.x > 1000) {
-                this.y = Math.floor(Math.random() * (1500 - 100)) + 0;
-                this.x = -300;
+            if (this.x > 920) {
+                this.y = Math.floor(Math.random() * (850 - 40)) + 0;
+                this.x = -200;
             }
         }
         draw() {
