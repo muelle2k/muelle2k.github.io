@@ -5,7 +5,9 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: red;
+	}
+	html {
+		background-color: yellow;
 	}
 }
 
@@ -16,7 +18,9 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: red;
+	}
+	html {
+		background-color: yellow;
 	}
 }
 
@@ -27,7 +31,9 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: red;
+	}
+	html {
+		background-color: yellow;
 	}
 }
 
@@ -38,6 +44,8 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: red;
+	}
+	html {
+		background-color: yellow;
 	}
 }

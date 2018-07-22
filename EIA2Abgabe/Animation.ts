@@ -36,7 +36,7 @@ namespace Aufgabe11 {
         //canvas.addEventListener("touchmove", movePlaneTouch);
         
         for (let i: number = 0; i < 4; i++) {
-            let stars: Star = new Star(Math.random() * (1000 - 700) + 0, Math.random() * 180, "gold");
+            let stars: Star = new Star(Math.random() * (1000 - 700) + 0, Math.random() * 180, "yellow");
             stars.r = 10;
             objects.push(stars);
         }
@@ -69,9 +69,9 @@ namespace Aufgabe11 {
     //Funktion die den Punktestand zeichnet
 
     function showHighscore(): void {
-        crc2.font = "60px Arial";
+        crc2.font = "50px Arial";
         crc2.fillStyle = "white";
-        crc2.fillText("Score: " + highscore, 650, 100);
+        crc2.fillText("Score: " + highscore, 675, 100);
     }
 
 
@@ -85,7 +85,6 @@ namespace Aufgabe11 {
 
 
     }
-
 
     function moveObjects(): void {
 
