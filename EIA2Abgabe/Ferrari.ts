@@ -6,17 +6,7 @@ namespace Aufgabe11 {
 
         }
 
-        moveDown(): void {
-            if (this.y > crc2.canvas.height) {
-                this.y += 10;
-            }
-        }
-
-        moveUp(): void {
-            if (this.y < crc2.canvas.height) {
-                this.y += -10;
-            }
-        }
+       
 
         move(): void {
 

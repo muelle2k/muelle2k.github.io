@@ -4,16 +4,6 @@ var Aufgabe11;
         constructor(_x, _y, _color) {
             super(_x, _y, _color);
         }
-        moveDown() {
-            if (this.y > Aufgabe11.crc2.canvas.height) {
-                this.y += 10;
-            }
-        }
-        moveUp() {
-            if (this.y < Aufgabe11.crc2.canvas.height) {
-                this.y += -10;
-            }
-        }
         move() {
             this.x += +30;
             if (this.x > 920) {

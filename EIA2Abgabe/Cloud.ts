@@ -22,13 +22,13 @@ namespace Aufgabe11 {
             crc2.beginPath();
             crc2.fillStyle = this.color;
             crc2.moveTo(this.x, this.y);
-            crc2.bezierCurveTo(this.x - 40, this.y + 20, this.x - 40, this.y + 70, this.x + 60, this.y + 70);
-            crc2.bezierCurveTo(this.x + 80, this.y + 20, this.x - 40, this.y + 70, this.x + 60, this.y + 70);
-            crc2.bezierCurveTo(this.x + 80, this.y + 100, this.x + 150, this.y + 100, this.x + 170, this.y + 70);
-            crc2.bezierCurveTo(this.x + 250, this.y + 70, this.x + 250, this.y + 40, this.x + 220, this.y + 20);
-            crc2.bezierCurveTo(this.x + 260, this.y - 40, this.x + 200, this.y - 50, this.x + 170, this.y - 30);
-            crc2.bezierCurveTo(this.x + 150, this.y - 75, this.x + 80, this.y - 60, this.x + 80, this.y - 30);
-            crc2.bezierCurveTo(this.x + 30, this.y - 75, this.x - 20, this.y - 60, this.x, this.y);
+            crc2.bezierCurveTo(this.x - 20, this.y + 10, this.x - 20, this.y + 35, this.x + 30, this.y + 35);
+            crc2.bezierCurveTo(this.x + 40, this.y + 10, this.x - 20, this.y + 35, this.x + 30, this.y + 35);
+            crc2.bezierCurveTo(this.x + 40, this.y + 50, this.x + 75, this.y + 50, this.x + 85, this.y + 35);
+            crc2.bezierCurveTo(this.x + 155, this.y + 35, this.x + 90, this.y + 10, this.x + 100, this.y + 10);
+            crc2.bezierCurveTo(this.x + 130, this.y - 20, this.x + 100, this.y - 25, this.x + 60, this.y - 15);
+            crc2.bezierCurveTo(this.x + 75, this.y - 37.5, this.x + 40, this.y - 30, this.x + 40, this.y - 15);
+            crc2.bezierCurveTo(this.x + 15, this.y - 37.5, this.x - 10, this.y - 30, this.x, this.y);
             crc2.closePath();
 
             // add a radial gradient
