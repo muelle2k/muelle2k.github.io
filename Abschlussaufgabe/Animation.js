@@ -35,7 +35,7 @@ var Semesteraufgabe;
             objects.push(stars);
             Semesteraufgabe.bombsArray.push(stars);
         }
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < 40; i++) {
             let clouds = new Semesteraufgabe.Cloud(Math.random() * Semesteraufgabe.crc2.canvas.width, Math.random() * Semesteraufgabe.crc2.canvas.height, "white");
             objects.push(clouds);
         }

@@ -52,7 +52,7 @@ namespace Semesteraufgabe {
             bombsArray.push(stars);
         }
 
-        for (let i: number = 0; i < 15; i++) {
+        for (let i: number = 0; i < 40; i++) {
             let clouds: Cloud = new Cloud(Math.random() * crc2.canvas.width, Math.random() * crc2.canvas.height, "white");
             objects.push(clouds);
         }

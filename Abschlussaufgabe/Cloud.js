@@ -9,7 +9,7 @@ var Semesteraufgabe;
                 this.x = Math.floor(Math.random() * (1000 - 980)) + 980;
                 this.y = Math.floor(Math.random() * (850 - 40)) + 0;
             }
-            this.x += -10;
+            this.x += -6;
         }
         draw() {
             Semesteraufgabe.crc2.beginPath();

@@ -15,7 +15,7 @@ namespace Semesteraufgabe {
                 this.y = Math.floor(Math.random() * (850 - 40)) + 0;
 
             }
-            this.x += -10;
+            this.x += -6;
 
         }
 

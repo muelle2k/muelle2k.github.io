@@ -23,7 +23,7 @@ var Semesteraufgabe;
                 this.x = Math.floor(Math.random() * (1000 - 980)) + 980;
                 this.y = Math.floor(Math.random() * (1500 - 100)) + 0;
             }
-            this.x += -8;
+            this.x += -10;
         }
         setRandomPosition() {
             this.x = Math.random() * Semesteraufgabe.crc2.canvas.width;
