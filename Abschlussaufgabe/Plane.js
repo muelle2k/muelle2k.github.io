@@ -41,11 +41,11 @@ var Semesteraufgabe;
                 this.y += 26;
             }
         }
-        moving(targetX) {
-            this.dx = targetX;
+        moving(targetY) {
+            this.dx = targetY;
         }
         stop() {
-            this.dx = this.x;
+            this.dx = this.y;
         }
         move() {
             this.x += +10;

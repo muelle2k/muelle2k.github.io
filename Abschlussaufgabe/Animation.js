@@ -33,15 +33,15 @@ var Semesteraufgabe;
             objects.push(clouds);
         }
         //Anonyme Funktion für Touch auf dem Handy
-        document.querySelector("body").addEventListener("touchstart", function (e) {
-            const canvasTouchPosX = e.touches.item(0).clientX - document.querySelector('canvas').clientLeft;
-            Semesteraufgabe.plane.moving(canvasTouchPosX);
+        document.querySelector("canvas").addEventListener("touchstart", function (e) {
+            const canvasTouchPosY = e.touches.item(0).clientX - document.querySelector('canvas').clientTop;
+            Semesteraufgabe.plane.moving(canvasTouchPosY);
         });
-        document.querySelector("body").addEventListener("touchmove", function (e) {
-            const canvasTouchPosX = e.touches.item(0).clientX - document.querySelector('canvas').clientLeft;
-            Semesteraufgabe.plane.moving(canvasTouchPosX);
+        document.querySelector("canvas").addEventListener("touchmove", function (e) {
+            const canvasTouchPosY = e.touches.item(0).clientX - document.querySelector('canvas').clientTop;
+            Semesteraufgabe.plane.moving(canvasTouchPosY);
         });
-        document.querySelector("body").addEventListener("touchend", function (e) {
+        document.querySelector("canvas").addEventListener("touchend", function (e) {
             Semesteraufgabe.plane.stop();
         });
         // Hintergrundbild als Variable gespeichert

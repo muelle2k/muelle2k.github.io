@@ -53,21 +53,21 @@ namespace Semesteraufgabe {
         
         
         //Anonyme Funktion für Touch auf dem Handy
-        document.querySelector("body").addEventListener("touchstart", function(e: TouchEvent) {
+        document.querySelector("canvas").addEventListener("touchstart", function(e: TouchEvent) {
 
-            const canvasTouchPosX = e.touches.item(0).clientX - document.querySelector('canvas').clientLeft;
+            const canvasTouchPosY = e.touches.item(0).clientX - document.querySelector('canvas').clientTop;
 
-            plane.moving(canvasTouchPosX);
+            plane.moving(canvasTouchPosY);
         });
 
-        document.querySelector("body").addEventListener("touchmove", function(e: TouchEvent) {
+        document.querySelector("canvas").addEventListener("touchmove", function(e: TouchEvent) {
 
-            const canvasTouchPosX = e.touches.item(0).clientX - document.querySelector('canvas').clientLeft;
+            const canvasTouchPosY = e.touches.item(0).clientX - document.querySelector('canvas').clientTop;
 
-           plane.moving(canvasTouchPosX);
+           plane.moving(canvasTouchPosY);
         });
 
-        document.querySelector("body").addEventListener("touchend", function(e: TouchEvent) {
+        document.querySelector("canvas").addEventListener("touchend", function(e: TouchEvent) {
             plane.stop();
         });
 
