@@ -53,14 +53,14 @@ namespace Semesteraufgabe { //neuer nc
             }
         }
 
-         moving(targetY: number): void {
+       /*  moving(targetY: number): void {
             this.dx = targetY;
         }
 
         stop(): void {
             this.dx = this.y;
         }
-        
+        */
         move(): void {
             this.x += +10;
             if (this.x > 920) {

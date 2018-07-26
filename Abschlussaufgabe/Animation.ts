@@ -9,9 +9,9 @@ namespace Semesteraufgabe {
 
     let objects: Superclass[] = [];
     let positionBombs: number[] = [];
-
-
-
+    
+    export let planeAudio = new Audio("beep.wav");
+    let sound = new Audio("audio.mp3")
     let imgData: ImageData;
     let inputs: NodeListOf<HTMLInputElement> = document.getElementsByTagName("input");
     let name: string = inputs[0].value;
@@ -21,6 +21,12 @@ namespace Semesteraufgabe {
         document.getElementById("startbild").style.display = "initial";
         let button: HTMLButtonElement = <HTMLButtonElement>document.getElementById("startButton");
         button.addEventListener("click", init);
+        // Hintergrundmusik 
+        
+        sound.loop = true;
+        sound.play();
+        sound.volume = 0.1;
+        document.body.appendChild(sound);
 
     }
 
@@ -50,31 +56,14 @@ namespace Semesteraufgabe {
             let clouds: Cloud = new Cloud(Math.random() * crc2.canvas.width, Math.random() * crc2.canvas.height, "white");
             objects.push(clouds);
         }
+               
         
+         // Hintergrundmusik 
         
-        //Anonyme Funktion für Touch auf dem Handy
-        document.querySelector("canvas").addEventListener("touchstart", function(e: TouchEvent) {
-
-            const canvasTouchPosY = e.touches.item(0).clientX - document.querySelector('canvas').clientTop;
-
-            plane.moving(canvasTouchPosY);
-        });
-
-        document.querySelector("canvas").addEventListener("touchmove", function(e: TouchEvent) {
-
-            const canvasTouchPosY = e.touches.item(0).clientX - document.querySelector('canvas').clientTop;
-
-           plane.moving(canvasTouchPosY);
-        });
-
-        document.querySelector("canvas").addEventListener("touchend", function(e: TouchEvent) {
-            plane.stop();
-        });
-
-        
-        
-        
-
+        sound.loop = true;
+        sound.play();
+        sound.volume = 0.3;
+        document.body.appendChild(sound); 
 
         // Hintergrundbild als Variable gespeichert
         imgData = crc2.getImageData(0, 0, canvas.width, canvas.height);
@@ -112,6 +101,7 @@ namespace Semesteraufgabe {
 
         plane.movePlane(clickPositionY);
         plane.collision();
+        
     }
 
     function showName(): void {

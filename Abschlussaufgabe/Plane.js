@@ -41,12 +41,14 @@ var Semesteraufgabe;
                 this.y += 26;
             }
         }
-        moving(targetY) {
-            this.dx = targetY;
-        }
-        stop() {
-            this.dx = this.y;
-        }
+        /*  moving(targetY: number): void {
+             this.dx = targetY;
+         }
+ 
+         stop(): void {
+             this.dx = this.y;
+         }
+         */
         move() {
             this.x += +10;
             if (this.x > 920) {

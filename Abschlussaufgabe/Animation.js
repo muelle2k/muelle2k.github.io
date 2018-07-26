@@ -4,6 +4,8 @@ var Semesteraufgabe;
     Semesteraufgabe.bombsArray = [];
     let objects = [];
     let positionBombs = [];
+    Semesteraufgabe.planeAudio = new Audio("beep.wav");
+    let sound = new Audio("audio.mp3");
     let imgData;
     let inputs = document.getElementsByTagName("input");
     let name = inputs[0].value;
@@ -12,6 +14,11 @@ var Semesteraufgabe;
         document.getElementById("startbild").style.display = "initial";
         let button = document.getElementById("startButton");
         button.addEventListener("click", init);
+        // Hintergrundmusik 
+        sound.loop = true;
+        sound.play();
+        sound.volume = 0.1;
+        document.body.appendChild(sound);
     }
     function init() {
         document.getElementById("startbild").style.display = "none";
@@ -32,18 +39,11 @@ var Semesteraufgabe;
             let clouds = new Semesteraufgabe.Cloud(Math.random() * Semesteraufgabe.crc2.canvas.width, Math.random() * Semesteraufgabe.crc2.canvas.height, "white");
             objects.push(clouds);
         }
-        //Anonyme Funktion für Touch auf dem Handy
-        document.querySelector("canvas").addEventListener("touchstart", function (e) {
-            const canvasTouchPosY = e.touches.item(0).clientX - document.querySelector('canvas').clientTop;
-            Semesteraufgabe.plane.moving(canvasTouchPosY);
-        });
-        document.querySelector("canvas").addEventListener("touchmove", function (e) {
-            const canvasTouchPosY = e.touches.item(0).clientX - document.querySelector('canvas').clientTop;
-            Semesteraufgabe.plane.moving(canvasTouchPosY);
-        });
-        document.querySelector("canvas").addEventListener("touchend", function (e) {
-            Semesteraufgabe.plane.stop();
-        });
+        // Hintergrundmusik 
+        sound.loop = true;
+        sound.play();
+        sound.volume = 0.3;
+        document.body.appendChild(sound);
         // Hintergrundbild als Variable gespeichert
         imgData = Semesteraufgabe.crc2.getImageData(0, 0, Semesteraufgabe.canvas.width, Semesteraufgabe.canvas.height);
         // animate aufrufen
