@@ -33,7 +33,8 @@ namespace Semesteraufgabe {
         crc2 = canvas.getContext("2d");
 
         canvas.addEventListener("click", checkPositionPlane);
-
+        canvas.addEventListener("touchstart", checkPositionPlane);
+        
         environment();
 
         plane = new Plane((Math.random() * 100) * 1400, Math.random() * crc2.canvas.height, "#CD0000");
