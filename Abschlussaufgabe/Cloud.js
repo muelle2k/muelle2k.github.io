@@ -30,11 +30,11 @@ var Semesteraufgabe;
             grd.addColorStop(0, "white");
             grd.addColorStop(1, "#C0C0C0");
             Semesteraufgabe.crc2.closePath();
-            Semesteraufgabe.crc2.fillStyle = "#FFE4B5";
+            Semesteraufgabe.crc2.fillStyle = "white";
             Semesteraufgabe.crc2.fillStyle = grd;
             Semesteraufgabe.crc2.fill();
             Semesteraufgabe.crc2.lineWidth = 5;
-            Semesteraufgabe.crc2.strokeStyle = "#696969";
+            Semesteraufgabe.crc2.strokeStyle = "#252525";
             Semesteraufgabe.crc2.stroke();
             Semesteraufgabe.crc2.fill();
         }

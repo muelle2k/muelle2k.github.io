@@ -1,6 +1,6 @@
 namespace Semesteraufgabe {
 
-    export class Bombe extends Superclass {
+    export class Star extends Superclass {
 
         constructor(_x: number, _y: number, _color: string) {
             super(_x, _y, _color);

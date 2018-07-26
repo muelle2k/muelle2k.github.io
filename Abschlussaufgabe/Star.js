@@ -1,6 +1,6 @@
 var Semesteraufgabe;
 (function (Semesteraufgabe) {
-    class Bombe extends Semesteraufgabe.Superclass {
+    class Star extends Semesteraufgabe.Superclass {
         constructor(_x, _y, _color) {
             super(_x, _y, _color);
         }
@@ -41,6 +41,6 @@ var Semesteraufgabe;
         }
         ;
     }
-    Semesteraufgabe.Bombe = Bombe;
+    Semesteraufgabe.Star = Star;
 })(Semesteraufgabe || (Semesteraufgabe = {}));
-//# sourceMappingURL=Bombe.js.map
+//# sourceMappingURL=Star.js.map

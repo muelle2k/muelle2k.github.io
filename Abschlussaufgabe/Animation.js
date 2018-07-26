@@ -5,6 +5,8 @@ var Semesteraufgabe;
     let objects = [];
     let positionBombs = [];
     let imgData;
+    let inputs = document.getElementsByTagName("input");
+    let name = inputs[0].value;
     function start(_event) {
         document.getElementById("canvas").style.display = "none";
         document.getElementById("startbild").style.display = "initial";
@@ -21,9 +23,9 @@ var Semesteraufgabe;
         Semesteraufgabe.plane = new Semesteraufgabe.Plane((Math.random() * 100) * 1400, Math.random() * Semesteraufgabe.crc2.canvas.height, "#CD0000");
         objects.push(Semesteraufgabe.plane);
         for (let i = 0; i < 7; i++) {
-            let bombs = new Semesteraufgabe.Bombe(Math.random() * (1000 - 700) + 0, Math.random() * 180, "yellow");
-            objects.push(bombs);
-            Semesteraufgabe.bombsArray.push(bombs);
+            let stars = new Semesteraufgabe.Star(Math.random() * (1000 - 700) + 0, Math.random() * 180, "white");
+            objects.push(stars);
+            Semesteraufgabe.bombsArray.push(stars);
         }
         for (let i = 0; i < 15; i++) {
             let clouds = new Semesteraufgabe.Cloud(Math.random() * Semesteraufgabe.crc2.canvas.width, Math.random() * Semesteraufgabe.crc2.canvas.height, "white");
@@ -49,6 +51,7 @@ var Semesteraufgabe;
         for (let i = 0; i < objects.length; i++) {
             objects[i].draw();
         }
+        showName();
     }
     function checkPositionPlane(_event) {
         let clickPositionY = _event.clientY;
@@ -56,5 +59,11 @@ var Semesteraufgabe;
         Semesteraufgabe.plane.movePlane(clickPositionY);
         Semesteraufgabe.plane.collision();
     }
+    function showName() {
+        Semesteraufgabe.crc2.font = "30px Arial";
+        Semesteraufgabe.crc2.fillStyle = "white";
+        Semesteraufgabe.crc2.textAlign = "center";
+        Semesteraufgabe.crc2.fillText("Player: " + inputs[0].value, 450, 50);
+    }
 })(Semesteraufgabe || (Semesteraufgabe = {}));
-//# sourceMappingURL=Canvas.js.map
+//# sourceMappingURL=Animation.js.map

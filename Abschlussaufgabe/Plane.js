@@ -31,15 +31,20 @@ var Semesteraufgabe;
         }
         // move nach Mausklick
         movePlane(_clickPositionY) {
-            this.x += +20;
             if (this.x > 920) {
-                this.x = -200;
+                this.x = 100;
             }
             if (_clickPositionY <= this.y) {
-                this.y -= 20;
+                this.y -= 26;
             }
             else {
-                this.y += 20;
+                this.y += 26;
+            }
+        }
+        move() {
+            this.x += +10;
+            if (this.x > 920) {
+                this.x = -200;
             }
         }
         checkPlane() {
@@ -51,12 +56,10 @@ var Semesteraufgabe;
             for (let i = 0; i < Semesteraufgabe.bombsArray.length; i++) {
                 let distanceX = this.x - Semesteraufgabe.bombsArray[i].x;
                 let distanceY = this.y - Semesteraufgabe.bombsArray[i].y;
-                console.log("x: " + distanceX);
-                console.log("y: " + distanceY);
-                if (distanceX < 80 && distanceX > -40) {
-                    if (distanceY < 80 && distanceY > -40) {
+                if (distanceX < 200 && distanceX > 50) {
+                    if (distanceY < 80 && distanceY > -80) {
                         this.gameOver();
-                        console.log("treffer");
+                        console.log("getroffen");
                     }
                 }
             }

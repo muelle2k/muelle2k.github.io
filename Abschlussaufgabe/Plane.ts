@@ -41,22 +41,26 @@ namespace Semesteraufgabe { //neuer nc
         // move nach Mausklick
         movePlane(_clickPositionY: number): void {
 
-            this.x += +20;
-
             if (this.x > 920) {
-                this.x = -200;
+                this.x = 100;
             }
 
             if (_clickPositionY <= this.y) { // falls click über
-                this.y -= 20;
+                this.y -= 26;
             } else { //else click unter
-                this.y += 20;
+                this.y += 26;
+            }
+        }
+
+        move(): void {
+            this.x += +10;
+            if (this.x > 920) {
+                this.x = -200;
             }
         }
 
         checkPlane(): number {
             let position: number = this.x + this.y;
-
             return position;
         };
 
@@ -64,13 +68,10 @@ namespace Semesteraufgabe { //neuer nc
             for (let i = 0; i < bombsArray.length; i++) {
                 let distanceX = this.x - bombsArray[i].x;
                 let distanceY = this.y - bombsArray[i].y;
-                console.log("x: " + distanceX);
-                console.log("y: " + distanceY);
-                if (distanceX < 80 && distanceX > - 40) {
-
-                    if (distanceY < 80 && distanceY > -40) {
+                if (distanceX < 200 && distanceX > 50) {
+                    if (distanceY < 80 && distanceY > -80) {
                         this.gameOver();
-                        console.log("treffer");
+                        console.log("getroffen");
                     }
                 }
             }

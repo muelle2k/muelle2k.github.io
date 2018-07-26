@@ -40,12 +40,12 @@ namespace Semesteraufgabe {
             grd.addColorStop(0, "white");
             grd.addColorStop(1, "#C0C0C0");
             crc2.closePath();
-            crc2.fillStyle = "#FFE4B5";
+            crc2.fillStyle = "white";
             crc2.fillStyle = grd;
             crc2.fill();
 
             crc2.lineWidth = 5;
-            crc2.strokeStyle = "#696969";
+            crc2.strokeStyle = "#252525";
             crc2.stroke();
             crc2.fill()
 
