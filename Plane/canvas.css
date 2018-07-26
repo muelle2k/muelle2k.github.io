@@ -1,0 +1,67 @@
+#startButton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2em;
+	border-radius: 80px;
+	background-color: white;
+	border: none;
+	color: black;
+	margin-top: 100px;
+	padding: 25px 50px 25px 50px;
+	font-weight: bold;
+	
+}
+
+body h1 {
+	background-color: white;
+	text-align: center;
+	font-size: 4em;
+	margin-top: 100px;
+}
+
+@media screen and (min-width:16em) {
+	body canvas {
+		width: 100%;
+		height: 100%;
+	}
+	html {
+		background-color: black;
+	}
+}
+
+@media screen and (min-width:35.625em) {
+	body canvas {
+		width: 100%;
+		height: 100%;
+	}
+	html {
+		background-color: black;
+	}
+}
+
+@media screen and (min-width:48em) {
+	body canvas {
+		width: 100%;
+		height: 37.5em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
+	html {
+		background-color: black;
+	}
+}
+
+@media screen and (min-width:64em) {
+	body canvas {
+		width: 70em;
+		height: 50em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
+	html {
+		background-color: black;
+	}
+}
