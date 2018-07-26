@@ -32,6 +32,18 @@ var Semesteraufgabe;
             let clouds = new Semesteraufgabe.Cloud(Math.random() * Semesteraufgabe.crc2.canvas.width, Math.random() * Semesteraufgabe.crc2.canvas.height, "white");
             objects.push(clouds);
         }
+        //Anonyme Funktion für Touch auf dem Handy
+        document.querySelector("body").addEventListener("touchstart", function (e) {
+            const canvasTouchPosX = e.touches.item(0).clientX - document.querySelector('canvas').clientLeft;
+            Semesteraufgabe.plane.moving(canvasTouchPosX);
+        });
+        document.querySelector("body").addEventListener("touchmove", function (e) {
+            const canvasTouchPosX = e.touches.item(0).clientX - document.querySelector('canvas').clientLeft;
+            Semesteraufgabe.plane.moving(canvasTouchPosX);
+        });
+        document.querySelector("body").addEventListener("touchend", function (e) {
+            Semesteraufgabe.plane.stop();
+        });
         // Hintergrundbild als Variable gespeichert
         imgData = Semesteraufgabe.crc2.getImageData(0, 0, Semesteraufgabe.canvas.width, Semesteraufgabe.canvas.height);
         // animate aufrufen

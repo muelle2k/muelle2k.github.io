@@ -2,6 +2,7 @@ namespace Semesteraufgabe { //neuer nc
 
     export class Plane extends Superclass {
         direction: number;
+        dx: number;
 
 
         constructor(_x: number, _y: number, _color: string) {
@@ -52,6 +53,14 @@ namespace Semesteraufgabe { //neuer nc
             }
         }
 
+         moving(targetX: number): void {
+            this.dx = targetX;
+        }
+
+        stop(): void {
+            this.dx = this.x;
+        }
+        
         move(): void {
             this.x += +10;
             if (this.x > 920) {

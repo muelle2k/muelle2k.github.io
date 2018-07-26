@@ -50,6 +50,30 @@ namespace Semesteraufgabe {
             let clouds: Cloud = new Cloud(Math.random() * crc2.canvas.width, Math.random() * crc2.canvas.height, "white");
             objects.push(clouds);
         }
+        
+        
+        //Anonyme Funktion für Touch auf dem Handy
+        document.querySelector("body").addEventListener("touchstart", function(e: TouchEvent) {
+
+            const canvasTouchPosX = e.touches.item(0).clientX - document.querySelector('canvas').clientLeft;
+
+            plane.moving(canvasTouchPosX);
+        });
+
+        document.querySelector("body").addEventListener("touchmove", function(e: TouchEvent) {
+
+            const canvasTouchPosX = e.touches.item(0).clientX - document.querySelector('canvas').clientLeft;
+
+           plane.moving(canvasTouchPosX);
+        });
+
+        document.querySelector("body").addEventListener("touchend", function(e: TouchEvent) {
+            plane.stop();
+        });
+
+        
+        
+        
 
 
         // Hintergrundbild als Variable gespeichert
