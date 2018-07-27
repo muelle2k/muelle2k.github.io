@@ -26,7 +26,7 @@ var Semesteraufgabe;
         Semesteraufgabe.canvas = document.getElementsByTagName("canvas")[0];
         Semesteraufgabe.crc2 = Semesteraufgabe.canvas.getContext("2d");
         Semesteraufgabe.canvas.addEventListener("click", checkPositionPlane);
-        Semesteraufgabe.canvas.addEventListener("touchstart", checkPositionPlane);
+        Semesteraufgabe.canvas.addEventListener("touch", checkPositionTouch);
         Semesteraufgabe.environment();
         Semesteraufgabe.plane = new Semesteraufgabe.Plane((Math.random() * 100) * 1400, Math.random() * Semesteraufgabe.crc2.canvas.height, "#CD0000");
         objects.push(Semesteraufgabe.plane);
@@ -54,6 +54,7 @@ var Semesteraufgabe;
         Semesteraufgabe.crc2.putImageData(imgData, 0, 0);
         moveObjects();
         drawObjects();
+        Semesteraufgabe.plane.collision();
     }
     function moveObjects() {
         for (let i = 0; i < objects.length; i++) {
@@ -70,7 +71,11 @@ var Semesteraufgabe;
         let clickPositionY = _event.clientY;
         let positionNemo = Semesteraufgabe.plane.checkPlane();
         Semesteraufgabe.plane.movePlane(clickPositionY);
-        Semesteraufgabe.plane.collision();
+    }
+    function checkPositionTouch(_event) {
+        let clickPositionY = _event.clientY;
+        let positionNemo = Semesteraufgabe.plane.checkPlane();
+        Semesteraufgabe.plane.movePlane(clickPositionY);
     }
     function showName() {
         Semesteraufgabe.crc2.font = "30px Arial";

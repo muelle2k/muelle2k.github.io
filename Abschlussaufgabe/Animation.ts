@@ -9,7 +9,7 @@ namespace Semesteraufgabe {
 
     let objects: Superclass[] = [];
     let positionBombs: number[] = [];
-    
+
     export let planeAudio = new Audio("beep.wav");
     let sound = new Audio("audio.mp3")
     let imgData: ImageData;
@@ -22,7 +22,7 @@ namespace Semesteraufgabe {
         let button: HTMLButtonElement = <HTMLButtonElement>document.getElementById("startButton");
         button.addEventListener("click", init);
         // Hintergrundmusik 
-        
+
         sound.loop = true;
         sound.play();
         sound.volume = 0.1;
@@ -39,8 +39,8 @@ namespace Semesteraufgabe {
         crc2 = canvas.getContext("2d");
 
         canvas.addEventListener("click", checkPositionPlane);
-        canvas.addEventListener("touchstart", checkPositionPlane);
-        
+        canvas.addEventListener("touch", checkPositionTouch);
+
         environment();
 
         plane = new Plane((Math.random() * 100) * 1400, Math.random() * crc2.canvas.height, "#CD0000");
@@ -56,14 +56,13 @@ namespace Semesteraufgabe {
             let clouds: Cloud = new Cloud(Math.random() * crc2.canvas.width, Math.random() * crc2.canvas.height, "white");
             objects.push(clouds);
         }
-               
-        
-         // Hintergrundmusik 
-        
-        sound.loop = true;
+
+
+        // Hintergrundmusik 
+         sound.loop = true;
         sound.play();
         sound.volume = 0.3;
-        document.body.appendChild(sound); 
+        document.body.appendChild(sound);
 
         // Hintergrundbild als Variable gespeichert
         imgData = crc2.getImageData(0, 0, canvas.width, canvas.height);
@@ -79,6 +78,7 @@ namespace Semesteraufgabe {
 
         moveObjects();
         drawObjects();
+        plane.collision();
     }
 
     function moveObjects(): void {
@@ -100,8 +100,16 @@ namespace Semesteraufgabe {
         let positionNemo: number = plane.checkPlane();
 
         plane.movePlane(clickPositionY);
-        plane.collision();
-        
+
+    }
+
+    function checkPositionTouch(_event: MouseEvent): void {
+
+        let clickPositionY: number = _event.clientY;
+        let positionNemo: number = plane.checkPlane();
+
+        plane.movePlane(clickPositionY);
+
     }
 
     function showName(): void {
