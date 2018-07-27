@@ -1,5 +1,5 @@
 html {
-	background-color: blue;
+	background-color: white;
 }
 
 #text {
@@ -7,12 +7,12 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 2em;
-	border-radius: 80px;
+	border-radius: 50px;
 	background-color: black;
 	border: none;
 	color: white;
 	margin-top: 100px;
-	padding: 15px 20px 15px 20px;
+	padding: 15px 8px 15px 8px;
 	font-weight: bold;
 	text-align: center;
 }

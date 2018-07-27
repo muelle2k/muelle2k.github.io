@@ -55,19 +55,17 @@ var Semesteraufgabe;
                 this.x = -200;
             }
         }
-        checkPlane() {
-            let position = this.x + this.y;
+        /*checkPlane(): number {
+            let position: number = this.x + this.y;
             return position;
-        }
-        ;
-        collision() {
+        };*/
+        crash() {
             for (let i = 0; i < Semesteraufgabe.bombsArray.length; i++) {
                 let distanceX = this.x - Semesteraufgabe.bombsArray[i].x;
                 let distanceY = this.y - Semesteraufgabe.bombsArray[i].y;
-                if (distanceX < 200 && distanceX > 50) {
-                    if (distanceY < 80 && distanceY > -80) {
+                if (distanceX < 50 && distanceX > -150) {
+                    if (distanceY < 30 && distanceY > -30) {
                         this.gameOver();
-                        console.log("getroffen");
                     }
                 }
             }

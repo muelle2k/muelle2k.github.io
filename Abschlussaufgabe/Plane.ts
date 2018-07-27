@@ -68,19 +68,21 @@ namespace Semesteraufgabe { //neuer nc
             }
         }
 
-        checkPlane(): number {
+        /*checkPlane(): number {
             let position: number = this.x + this.y;
             return position;
-        };
+        };*/
 
-        collision() {
+        crash() {
             for (let i = 0; i < bombsArray.length; i++) {
                 let distanceX = this.x - bombsArray[i].x;
                 let distanceY = this.y - bombsArray[i].y;
-                if (distanceX < 200 && distanceX > 50) {
-                    if (distanceY < 80 && distanceY > -80) {
+                
+                if (distanceX < 50 && distanceX > -150) {
+                    
+                    if (distanceY < 30 && distanceY > -30) {
                         this.gameOver();
-                        console.log("getroffen");
+                                              
                     }
                 }
             }

@@ -25,14 +25,6 @@ var Semesteraufgabe;
             }
             this.x += -10;
         }
-        setRandomPosition() {
-            this.x = Math.random() * Semesteraufgabe.crc2.canvas.width;
-            this.y = Math.random() * Semesteraufgabe.crc2.canvas.height - 200;
-        }
-        setRandompositionY() {
-            this.y = Math.random() * Semesteraufgabe.crc2.canvas.height - 200;
-        }
-        ;
         checkPositionBombe() {
             let positionX = this.x;
             let positionY = this.y;

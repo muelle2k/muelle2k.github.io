@@ -47,19 +47,19 @@ namespace Semesteraufgabe {
         objects.push(plane);
 
         for (let i: number = 0; i < 7; i++) {
-            let stars: Star = new Star(Math.random() * (1000 - 700) + 0, Math.random() * 180, "white");
+            let stars: Star = new Star(Math.random() * (1000) + 0, Math.random() * 180, "white");
             objects.push(stars);
             bombsArray.push(stars);
         }
 
-        for (let i: number = 0; i < 40; i++) {
+        for (let i: number = 0; i < 20; i++) {
             let clouds: Cloud = new Cloud(Math.random() * crc2.canvas.width, Math.random() * crc2.canvas.height, "white");
             objects.push(clouds);
         }
 
 
         // Hintergrundmusik 
-         sound.loop = true;
+        sound.loop = true;
         sound.play();
         sound.volume = 0.3;
         document.body.appendChild(sound);
@@ -78,7 +78,8 @@ namespace Semesteraufgabe {
 
         moveObjects();
         drawObjects();
-        plane.collision();
+       
+        plane.crash();
     }
 
     function moveObjects(): void {
@@ -97,8 +98,7 @@ namespace Semesteraufgabe {
     function checkPositionPlane(_event: MouseEvent): void {
 
         let clickPositionY: number = _event.clientY;
-        let positionNemo: number = plane.checkPlane();
-
+        //let positionPlane: number = plane.checkPlane();
         plane.movePlane(clickPositionY);
 
     }
@@ -106,8 +106,7 @@ namespace Semesteraufgabe {
     function checkPositionTouch(_event: MouseEvent): void {
 
         let clickPositionY: number = _event.clientY;
-        let positionNemo: number = plane.checkPlane();
-
+        //let positionPlane: number = plane.checkPlane();
         plane.movePlane(clickPositionY);
 
     }

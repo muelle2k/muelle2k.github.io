@@ -31,11 +31,11 @@ var Semesteraufgabe;
         Semesteraufgabe.plane = new Semesteraufgabe.Plane((Math.random() * 100) * 1400, Math.random() * Semesteraufgabe.crc2.canvas.height, "#CD0000");
         objects.push(Semesteraufgabe.plane);
         for (let i = 0; i < 7; i++) {
-            let stars = new Semesteraufgabe.Star(Math.random() * (1000 - 700) + 0, Math.random() * 180, "white");
+            let stars = new Semesteraufgabe.Star(Math.random() * (1000) + 0, Math.random() * 180, "white");
             objects.push(stars);
             Semesteraufgabe.bombsArray.push(stars);
         }
-        for (let i = 0; i < 40; i++) {
+        for (let i = 0; i < 20; i++) {
             let clouds = new Semesteraufgabe.Cloud(Math.random() * Semesteraufgabe.crc2.canvas.width, Math.random() * Semesteraufgabe.crc2.canvas.height, "white");
             objects.push(clouds);
         }
@@ -54,7 +54,7 @@ var Semesteraufgabe;
         Semesteraufgabe.crc2.putImageData(imgData, 0, 0);
         moveObjects();
         drawObjects();
-        Semesteraufgabe.plane.collision();
+        Semesteraufgabe.plane.crash();
     }
     function moveObjects() {
         for (let i = 0; i < objects.length; i++) {
@@ -69,12 +69,12 @@ var Semesteraufgabe;
     }
     function checkPositionPlane(_event) {
         let clickPositionY = _event.clientY;
-        let positionNemo = Semesteraufgabe.plane.checkPlane();
+        //let positionPlane: number = plane.checkPlane();
         Semesteraufgabe.plane.movePlane(clickPositionY);
     }
     function checkPositionTouch(_event) {
         let clickPositionY = _event.clientY;
-        let positionNemo = Semesteraufgabe.plane.checkPlane();
+        //let positionPlane: number = plane.checkPlane();
         Semesteraufgabe.plane.movePlane(clickPositionY);
     }
     function showName() {

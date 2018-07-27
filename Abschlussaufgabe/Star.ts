@@ -33,14 +33,7 @@ namespace Semesteraufgabe {
             this.x += -10;
         }
 
-        setRandomPosition(): void {
-            this.x = Math.random() * crc2.canvas.width;
-            this.y = Math.random() * crc2.canvas.height - 200;
-        }
-
-        setRandompositionY(): void {
-            this.y = Math.random() * crc2.canvas.height - 200;
-        };
+       
 
         checkPositionBombe() {
             let positionX: number = this.x;
