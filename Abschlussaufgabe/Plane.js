@@ -41,24 +41,12 @@ var Semesteraufgabe;
                 this.y += 26;
             }
         }
-        /*  moving(targetY: number): void {
-             this.dx = targetY;
-         }
- 
-         stop(): void {
-             this.dx = this.y;
-         }
-         */
         move() {
             this.x += +10;
             if (this.x > 920) {
                 this.x = -200;
             }
         }
-        /*checkPlane(): number {
-            let position: number = this.x + this.y;
-            return position;
-        };*/
         crash() {
             for (let i = 0; i < Semesteraufgabe.bombsArray.length; i++) {
                 let distanceX = this.x - Semesteraufgabe.bombsArray[i].x;

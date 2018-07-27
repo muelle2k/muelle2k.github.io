@@ -19,7 +19,9 @@ namespace Semesteraufgabe {
     function start(_event: Event): void {
         document.getElementById("canvas").style.display = "none";
         document.getElementById("startbild").style.display = "initial";
+        
         let button: HTMLButtonElement = <HTMLButtonElement>document.getElementById("startButton");
+        
         button.addEventListener("click", init);
         // Hintergrundmusik 
 
@@ -97,17 +99,15 @@ namespace Semesteraufgabe {
 
     function checkPositionPlane(_event: MouseEvent): void {
 
-        let clickPositionY: number = _event.clientY;
-        //let positionPlane: number = plane.checkPlane();
-        plane.movePlane(clickPositionY);
+        let clickY: number = _event.pageY;
+        plane.movePlane(clickY);
 
     }
 
     function checkPositionTouch(_event: MouseEvent): void {
 
-        let clickPositionY: number = _event.clientY;
-        //let positionPlane: number = plane.checkPlane();
-        plane.movePlane(clickPositionY);
+        let clickY: number = _event.pageY;
+        plane.movePlane(clickY);
 
     }
 

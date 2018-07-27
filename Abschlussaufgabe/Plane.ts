@@ -2,8 +2,6 @@ namespace Semesteraufgabe { //neuer nc
 
     export class Plane extends Superclass {
         direction: number;
-        dx: number;
-
 
         constructor(_x: number, _y: number, _color: string) {
             super(_x, _y, _color);
@@ -53,14 +51,6 @@ namespace Semesteraufgabe { //neuer nc
             }
         }
 
-       /*  moving(targetY: number): void {
-            this.dx = targetY;
-        }
-
-        stop(): void {
-            this.dx = this.y;
-        }
-        */
         move(): void {
             this.x += +10;
             if (this.x > 920) {
@@ -68,10 +58,6 @@ namespace Semesteraufgabe { //neuer nc
             }
         }
 
-        /*checkPlane(): number {
-            let position: number = this.x + this.y;
-            return position;
-        };*/
 
         crash() {
             for (let i = 0; i < bombsArray.length; i++) {
@@ -81,6 +67,7 @@ namespace Semesteraufgabe { //neuer nc
                 if (distanceX < 50 && distanceX > -150) {
                     
                     if (distanceY < 30 && distanceY > -30) {
+                        
                         this.gameOver();
                                               
                     }

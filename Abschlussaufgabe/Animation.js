@@ -68,14 +68,12 @@ var Semesteraufgabe;
         showName();
     }
     function checkPositionPlane(_event) {
-        let clickPositionY = _event.clientY;
-        //let positionPlane: number = plane.checkPlane();
-        Semesteraufgabe.plane.movePlane(clickPositionY);
+        let clickY = _event.pageY;
+        Semesteraufgabe.plane.movePlane(clickY);
     }
     function checkPositionTouch(_event) {
-        let clickPositionY = _event.clientY;
-        //let positionPlane: number = plane.checkPlane();
-        Semesteraufgabe.plane.movePlane(clickPositionY);
+        let clickY = _event.pageY;
+        Semesteraufgabe.plane.movePlane(clickY);
     }
     function showName() {
         Semesteraufgabe.crc2.font = "30px Arial";
