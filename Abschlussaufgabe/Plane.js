@@ -48,9 +48,9 @@ var Semesteraufgabe;
             }
         }
         crash() {
-            for (let i = 0; i < Semesteraufgabe.bombsArray.length; i++) {
-                let distanceX = this.x - Semesteraufgabe.bombsArray[i].x;
-                let distanceY = this.y - Semesteraufgabe.bombsArray[i].y;
+            for (let i = 0; i < Semesteraufgabe.starsArray.length; i++) {
+                let distanceX = this.x - Semesteraufgabe.starsArray[i].x;
+                let distanceY = this.y - Semesteraufgabe.starsArray[i].y;
                 if (distanceX < 50 && distanceX > -150) {
                     if (distanceY < 30 && distanceY > -30) {
                         this.gameOver();

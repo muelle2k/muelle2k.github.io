@@ -35,7 +35,7 @@ namespace Semesteraufgabe {
 
        
 
-        checkPositionBombe() {
+        checkPositionStar() {
             let positionX: number = this.x;
             let positionY: number = this.y;
             let FinalPosition: number = positionX + positionY;

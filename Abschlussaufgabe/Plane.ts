@@ -60,9 +60,9 @@ namespace Semesteraufgabe { //neuer nc
 
 
         crash() {
-            for (let i = 0; i < bombsArray.length; i++) {
-                let distanceX = this.x - bombsArray[i].x;
-                let distanceY = this.y - bombsArray[i].y;
+            for (let i = 0; i < starsArray.length; i++) {
+                let distanceX = this.x - starsArray[i].x;
+                let distanceY = this.y - starsArray[i].y;
                 
                 if (distanceX < 50 && distanceX > -150) {
                     

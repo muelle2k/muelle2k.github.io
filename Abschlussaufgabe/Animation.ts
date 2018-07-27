@@ -5,10 +5,10 @@ namespace Semesteraufgabe {
     export let crc2: CanvasRenderingContext2D;
     export let canvas: HTMLCanvasElement;
     export let plane: Plane;
-    export let bombsArray: any[] = [];
+    export let starsArray: any[] = [];
 
     let objects: Superclass[] = [];
-    let positionBombs: number[] = [];
+    let positionStars: number[] = [];
 
     export let planeAudio = new Audio("beep.wav");
     let sound = new Audio("audio.mp3")
@@ -51,7 +51,7 @@ namespace Semesteraufgabe {
         for (let i: number = 0; i < 7; i++) {
             let stars: Star = new Star(Math.random() * (1000) + 0, Math.random() * 180, "white");
             objects.push(stars);
-            bombsArray.push(stars);
+            starsArray.push(stars);
         }
 
         for (let i: number = 0; i < 20; i++) {

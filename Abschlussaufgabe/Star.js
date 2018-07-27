@@ -25,7 +25,7 @@ var Semesteraufgabe;
             }
             this.x += -10;
         }
-        checkPositionBombe() {
+        checkPositionStar() {
             let positionX = this.x;
             let positionY = this.y;
             let FinalPosition = positionX + positionY;

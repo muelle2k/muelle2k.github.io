@@ -1,9 +1,9 @@
 var Semesteraufgabe;
 (function (Semesteraufgabe) {
     window.addEventListener("load", start);
-    Semesteraufgabe.bombsArray = [];
+    Semesteraufgabe.starsArray = [];
     let objects = [];
-    let positionBombs = [];
+    let positionStars = [];
     Semesteraufgabe.planeAudio = new Audio("beep.wav");
     let sound = new Audio("audio.mp3");
     let imgData;
@@ -33,7 +33,7 @@ var Semesteraufgabe;
         for (let i = 0; i < 7; i++) {
             let stars = new Semesteraufgabe.Star(Math.random() * (1000) + 0, Math.random() * 180, "white");
             objects.push(stars);
-            Semesteraufgabe.bombsArray.push(stars);
+            Semesteraufgabe.starsArray.push(stars);
         }
         for (let i = 0; i < 20; i++) {
             let clouds = new Semesteraufgabe.Cloud(Math.random() * Semesteraufgabe.crc2.canvas.width, Math.random() * Semesteraufgabe.crc2.canvas.height, "white");
