@@ -25,7 +25,7 @@ var Semesteraufgabe;
         document.getElementById("canvas").style.display = "initial";
         Semesteraufgabe.canvas = document.getElementsByTagName("canvas")[0];
         Semesteraufgabe.crc2 = Semesteraufgabe.canvas.getContext("2d");
-        Semesteraufgabe.canvas.addEventListener("click", checkPositionPlane);
+        Semesteraufgabe.canvas.addEventListener("click", checkPositionClick);
         Semesteraufgabe.canvas.addEventListener("touch", checkPositionTouch);
         Semesteraufgabe.environment();
         Semesteraufgabe.plane = new Semesteraufgabe.Plane((Math.random() * 100) * 1400, Math.random() * Semesteraufgabe.crc2.canvas.height, "#CD0000");
@@ -67,7 +67,7 @@ var Semesteraufgabe;
         }
         showName();
     }
-    function checkPositionPlane(_event) {
+    function checkPositionClick(_event) {
         let clickY = _event.pageY;
         Semesteraufgabe.plane.movePlane(clickY);
     }

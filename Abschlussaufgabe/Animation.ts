@@ -40,7 +40,7 @@ namespace Semesteraufgabe {
 
         crc2 = canvas.getContext("2d");
 
-        canvas.addEventListener("click", checkPositionPlane);
+        canvas.addEventListener("click", checkPositionClick);
         canvas.addEventListener("touch", checkPositionTouch);
 
         environment();
@@ -97,7 +97,7 @@ namespace Semesteraufgabe {
         showName();
     }
 
-    function checkPositionPlane(_event: MouseEvent): void {
+    function checkPositionClick(_event: MouseEvent): void {
 
         let clickY: number = _event.pageY;
         plane.movePlane(clickY);
