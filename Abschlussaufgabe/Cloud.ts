@@ -2,8 +2,7 @@ namespace Semesteraufgabe {
 
     export class Cloud extends Superclass {
 
-        scale: number;
-
+      
         constructor(_x: number, _y: number, _color: string) {
             super(_x, _y, _color);
 

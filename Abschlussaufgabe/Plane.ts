@@ -39,11 +39,7 @@ namespace Semesteraufgabe { //neuer nc
 
         // move nach Mausklick
         movePlane(_clickPositionY: number): void {
-
-            if (this.x > 920) {
-                this.x = 100;
-            }
-
+            
             if (_clickPositionY <= this.y) { // falls click über
                 this.y -= 26;
             } else { //else click unter
@@ -54,7 +50,7 @@ namespace Semesteraufgabe { //neuer nc
         move(): void {
             this.x += +10;
             if (this.x > 920) {
-                this.x = -200;
+                this.x = -150;
             }
         }
 

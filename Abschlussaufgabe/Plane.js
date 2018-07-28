@@ -31,9 +31,6 @@ var Semesteraufgabe;
         }
         // move nach Mausklick
         movePlane(_clickPositionY) {
-            if (this.x > 920) {
-                this.x = 100;
-            }
             if (_clickPositionY <= this.y) {
                 this.y -= 26;
             }
@@ -44,7 +41,7 @@ var Semesteraufgabe;
         move() {
             this.x += +10;
             if (this.x > 920) {
-                this.x = -200;
+                this.x = -150;
             }
         }
         crash() {
